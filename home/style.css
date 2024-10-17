@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Verduka", sans-serif;
+    font-family: "Fredoka", sans-serif;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    color: transparent;
 }
 
 .logo {
@@ -40,5 +41,71 @@ body {
 }
 
 .navbar a:hover {
-    color: #6AC5FE;;
+    color: #6AC5FE;
+}
+
+.banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    padding-right: 20px;
+}
+
+.banner img {
+    height: 65%;
+    width: 65%;
+    border-radius: 50%;
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.banner-content {
+    max-width: 650px;
+}
+
+.banner-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 20px;
+    color: white;
+}
+
+.about-me img {
+    height: 75%;
+    width: 75%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-me {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-me-content {
+    max-width: 650px;
+}
+
+.about-me-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.about-me-content hr {
+    margin-bottom: 15px;
+}
+
+.about-me-content p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
 }
