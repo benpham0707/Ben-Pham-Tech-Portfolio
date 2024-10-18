@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <title>Ben Pham</title>
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo">Ben Pham</a>
+        <a href="#banner" class="logo">Ben Pham</a>
         <nav class="navbar">
-            <a href="#About">About Me</a>
-            <a href="#My Education">My Education</a>
-            <a href="#Projects">Projects</a>
-            <a href="#ContactMe">Contact Me</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#education">My Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
         </nav>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="banner-content">
             <h1>Hi, my name is <span style="color: #6AC5FE;">Ben Pham</span></h1>
             <p>I am a passionate software enthusiast and a current student at the <span style="color: #6AC5FE;">University of California, Berkeley.</span></p>
@@ -26,7 +25,7 @@
         <div class="image"><img src="images/IMG_5301_3.jpg" alt=""/></div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="aboutme">
         <div class="about-me-image">
             <img src="images/Square Image Cropped.png" alt=""/>
         </div>
@@ -39,7 +38,7 @@
         </div>
     </section>
 
-    <section class="my-education">
+    <section class="my-education" id="education">
         <div class="my-education-content">
             <h2>My Education</h2>
             <hr>
@@ -61,7 +60,6 @@
 
     <section class="projects section" id="projects">
         <h2 class="section-title">Projects</h2>
-        <hr>    
         <p>I have had the opportunity to work on a wide range of projects that have honed my skills in <span style="color: #6AC5FE;">software engineering</span>, <span style="color: #6AC5FE;">data analysis</span>, and <span style="color: #6AC5FE;">machine learning</span>. Below are some of the projects that I have worked on, showcasing my <span style="color: #6AC5FE;">technical expertise</span> and <span style="color: #6AC5FE;">commitment to delivering impactful and innovative technologies.</span> Feel free to check them out!</p>
     
         <div class="project-grid">
@@ -120,10 +118,44 @@
                 </div>
             </article>
         </div>
-    
-        <a href="#" class="browse-all-button">Browse All</a>
+        <a href="allproj.html" class="browse-all-button">Browse All</a>
     </section>
-   
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p>I’m always open to discussing new <span style="color: #6AC5FE;">opportunities</span>, <span style="color: #6AC5FE;">collaborations</span>, or <span style="color: #6AC5FE;">tech-related ideas!</span> Feel free to reach out through the <span style="color: #6AC5FE;">form below</span> or connect with me on any of the <span style="color: #6AC5FE;">forms the contact</span> listed below – <span style="color: #6AC5FE;">I’d love to hear from you!</span></p>
+        <hr>
+        
+        <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+    
+            <div class="contact-info">
+                <div class="contact-method">
+                    <a href="https://linkedin.com/in/benhoangpham/" target="_blank">Linkedin</a>
+                </div>
+                <div class="contact-method">
+                    <a href="mailto:benpham0707@berkeley.edu">Email</a>
+                </div>
+                <div class="contact-method">
+                    <span>(714) 548 4119</span>
+                </div>
+                <div class="contact-method">
+                    <a href="https://instagram.com/beenpam/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <script src="script.js"></script>
